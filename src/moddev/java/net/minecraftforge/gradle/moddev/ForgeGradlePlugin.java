@@ -33,4 +33,8 @@ public final class ForgeGradlePlugin implements Plugin<Project>, FGPlugin {
         return instances.get(project).api;
     }
 
+    public ForgeGradlePluginInstance getPluginInstance(Project project) {
+        return instances.get(project);
+    }
+
 }
